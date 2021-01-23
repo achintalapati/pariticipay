@@ -26,7 +26,7 @@ class ProfilePicture extends React.Component {
       point = Number(localStorage.getItem("totalPoints"));
     }
     if(localStorage.getItem("assignments") != null) {
-      assignment = Number(localStorage.getItem("assignments"));
+      assignment = localStorage.getItem("assignments");
     }
     this.state = {
       totalPoints: point,
@@ -53,14 +53,14 @@ class ProfilePicture extends React.Component {
         totalPoints: this.state.totalPoints + points,
         assignments: rows
       });
+      console.log(this.state.assignments);
       localStorage.setItem("totalPoints", this.state.totalPoints + points);
-      localStorage.setItem("assignments", this.state.assignments);
       assignmentRow.style.visibility = 'hidden';
   }
 
   render() {
     let points = this.state.totalPoints;
-    let assignments = Array.from(this.state.assignments);
+    // let homework = this.state.assignments;
     return(
       <div className='profilePicture'>
         <div className='imageCropper'>
@@ -86,7 +86,7 @@ class ProfilePicture extends React.Component {
                   </TableRow>
                 </TableHead>
                 <TableBody>
-                  {assignments.map((row) => (
+                  {rows.map((row) => (
                     <TableRow id={row.name} key={row.name}>
                         <TableCell component="th" scope="row">
                           {row.name}
