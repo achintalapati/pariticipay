@@ -1,5 +1,4 @@
 .Store {
-  margin-top: 100px;
   background-image: linear-gradient(rgba(52, 225, 235, 1), rgba(167, 250, 240, 1));
   padding-bottom: 27px;
   text-align: center;
@@ -25,8 +24,9 @@
   display: inline-block;
   border: 1px solid gray;
   margin-right: 10px;
-  /* background-image: linear-gradient(rgb(21, 93, 176), rgb(109, 213, 237)); */
-  background-image: linear-gradient(rgb(189, 195, 199), rgb(44, 62, 80));
+  /* background-image: linear-gradient(rgb(55, 62, 70), rgb(255, 107, 107)); */
+  /* background-image: linear-gradient(rgb(0, 198, 255), rgb(0, 114, 255)); */
+  background-image: linear-gradient(rgb(201, 255, 191), rgb(255, 175, 189));
   padding: 5px;
 }
 

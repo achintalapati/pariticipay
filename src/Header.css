@@ -1,20 +1,33 @@
 .header {
-  display: flex;
+  display: block;
   justify-content: space-between;
   border-bottom: 1px solid darkgray; /*New*/
   align-items: center;
   background-color: #f9f9f9; /*New*/
-  position: fixed; /*New*/
+  position: relative; /*New*/
   right: 0; /*New*/
   left: 0; /*New*/
   top: 0; /*New*/
 }
 
 .header__logo {
-  height: 40px;
-  object-fit: contain;
+  position: relative;
+  width: 100%;
+  display: block;
 }
 
 .header__icon {
-  padding: 20px;
+  padding-left: 33px;
+  padding-right: 33px;
+  display: flex;
+}
+
+.header_buttons {
+  display: flex;
+  position: relative;
+}
+
+.header_logo_box {
+
+  display: block;
 }
