@@ -8,21 +8,61 @@ function Store() {
       <div className="ProfilePictureShop">
         <h2>Profile Pictures</h2>
         <div className="ScrollableShop">
-          <div className="PfpItem" style={{'background-image': 'url("https://images-na.ssl-images-amazon.com/images/I/61x6iuoEbLL._AC_SX522_.jpg")'}}></div>
-          <div className="PfpItem" style={{'background-image': 'url("https://www.nicepng.com/png/detail/96-961724_svg-transparent-download-dog-s-by-seng-hoong.png")'}}></div>
-          <div className="PfpItem" style={{'background-image': 'url("https://sports.cbsimg.net/images/blogs/Tom-Brady-shirtless-02-15-15.jpg")'}}></div>
-          <div className="PfpItem" style={{'background-image': 'url("https://sports.cbsimg.net/images/blogs/Tom-Brady-shirtless-02-15-15.jpg")'}}></div>
-          <div className="PfpItem" style={{'background-image': 'url("https://sports.cbsimg.net/images/blogs/Tom-Brady-shirtless-02-15-15.jpg")'}}></div>
+          <div className="ShopItem">
+            <div className="PfpItem" style={{'background-image': 'url("https://images-na.ssl-images-amazon.com/images/I/61x6iuoEbLL._AC_SX522_.jpg")'}}></div>
+            <h3 className="ShopItemName">Tiger</h3>
+            <p className="Cost">50 points</p>
+          </div>
+          <div className="ShopItem">
+            <div className="PfpItem" style={{'background-image': 'url("https://images-na.ssl-images-amazon.com/images/I/61x6iuoEbLL._AC_SX522_.jpg")'}}></div>
+            <h3 className="ShopItemName">Tiger</h3>
+            <p className="Cost">50 points</p>
+          </div>
+          <div className="ShopItem">
+            <div className="PfpItem" style={{'background-image': 'url("https://images-na.ssl-images-amazon.com/images/I/61x6iuoEbLL._AC_SX522_.jpg")'}}></div>
+            <h3 className="ShopItemName">Tiger</h3>
+            <p className="Cost">50 points</p>
+          </div>
+          <div className="ShopItem">
+            <div className="PfpItem" style={{'background-image': 'url("https://images-na.ssl-images-amazon.com/images/I/61x6iuoEbLL._AC_SX522_.jpg")'}}></div>
+            <h3 className="ShopItemName">Tiger</h3>
+            <p className="Cost">50 points</p>
+          </div>
+          <div className="ShopItem">
+            <div className="PfpItem" style={{'background-image': 'url("https://images-na.ssl-images-amazon.com/images/I/61x6iuoEbLL._AC_SX522_.jpg")'}}></div>
+            <h3 className="ShopItemName">Tiger</h3>
+            <p className="Cost">50 points</p>
+          </div>
         </div>
       </div>
       <div className="MusicShop">
         <h2>Music</h2>
         <div className="ScrollableShop">
+          <div className="ShopItem">
+            <div className="MusicItem" style={{'background-image': 'url("https://i1.sndcdn.com/artworks-000316381740-hsyz7i-t500x500.jpg")'}}></div>
+            <h3 className="ShopItemName">Believer</h3>
+            <p className="Cost">100 points</p>
+          </div>
+          <div className="ShopItem">
+            <div className="MusicItem" style={{'background-image': 'url("https://i1.sndcdn.com/artworks-000316381740-hsyz7i-t500x500.jpg")'}}></div>
+            <h3 className="ShopItemName">Believer</h3>
+            <p className="Cost">100 points</p>
+          </div>
+          <div className="ShopItem">
+            <div className="MusicItem" style={{'background-image': 'url("https://i1.sndcdn.com/artworks-000316381740-hsyz7i-t500x500.jpg")'}}></div>
+            <h3 className="ShopItemName">Believer</h3>
+            <p className="Cost">100 points</p>
+          </div>
         </div>
       </div>
       <div className="SpecialShop">
         <h2>Special Items</h2>
         <div className="ScrollableShop">
+          <div className="ShopItem">
+            <div className="SpecialItem" style={{'background-image': 'url("")'}}></div>
+            <h3 className="ShopItemName">Homework Pass</h3>
+            <p className="Cost">1000 points</p>
+          </div>
         </div>
       </div>
     </div>
