@@ -5,7 +5,8 @@ import React from 'react';
 function Store() {
   return (
     <div className="Store">
-      <div className="ProfilePictureShop">
+      <h1 className="StoreTitle">Store</h1>
+      <div className="ShopSection">
         <h2>Profile Pictures</h2>
         <div className="ScrollableShop">
           <div className="ShopItem">
@@ -35,7 +36,7 @@ function Store() {
           </div>
         </div>
       </div>
-      <div className="MusicShop">
+      <div className="ShopSection">
         <h2>Music</h2>
         <div className="ScrollableShop">
           <div className="ShopItem">
@@ -55,7 +56,7 @@ function Store() {
           </div>
         </div>
       </div>
-      <div className="SpecialShop">
+      <div className="ShopSection">
         <h2>Special Items</h2>
         <div className="ScrollableShop">
           <div className="ShopItem">
