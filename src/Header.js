@@ -1,18 +1,22 @@
 import React from 'react';
 import './Header.css';
-import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
-import AddIcon from '@material-ui/icons/Add';
+import BarChartIcon from '@material-ui/icons/BarChart';
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import IconButton from '@material-ui/core/IconButton';
+import PersonIcon from '@material-ui/icons/Person';
 import { Link } from 'react-router-dom';
 
 function Header() {
   return (
     <div className="header">
       <IconButton>
-        <SupervisorAccountIcon className="header__icon" fontSize="large"/>
+        <BarChartIcon className="header__icon" fontSize="large"/>
       </IconButton>
       <IconButton>
-        <AddIcon className="header__icon" fontSize="large"/>
+        <PersonIcon className="header__icon" fontSize="large"/>
+      </IconButton>
+      <IconButton>
+        <ShoppingCartIcon className="header__icon" fontSize="large"/>
       </IconButton>
     </div>
   )

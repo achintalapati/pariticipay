@@ -1,0 +1,15 @@
+.profilePicture {
+  margin: auto;
+  padding-top: 120px;
+}
+
+.profilePicture_image {
+  border-radius: 50%;
+  width: 70%;
+  /* object-fit: contain; */
+}
+
+.profilePicture_name {
+  text-align: center;
+  padding: 2%;
+}
