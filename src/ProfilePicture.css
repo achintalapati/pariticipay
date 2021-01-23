@@ -1,18 +1,44 @@
 .profilePicture {
   margin: auto;
-  margin-top: 120px;
-  /* border-style: solid; */
-
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+  margin-top: 100px;
+  padding-top: 10px;
   text-align: center;
+  height: 100%;
+  background-image: linear-gradient(rgba(52, 225, 235, 1), rgba(167, 250, 240, 1));
 }
 
 .profilePicture_image {
   margin-top: 0;
   padding-top: 0;
   width: 100%;
-  /* object-fit: contain; */
+}
+
+.imageCropper {
+  width: 300px;
+  height: 300px;
+  /* position: relative; */
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  margin: auto;
+  background-color: rgba(255,255,255,0.4);
+}
+
+.profilePicture_userDetails {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
+  width: 75%;
+  background-color: rgba(255,255,255,0.4);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.profilePicture_assignments {
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
 .profileRank {

@@ -20,21 +20,6 @@ function Leaderboard(){
        </List>
       </div>
     </div>
-    // <div className='header'>
-    //   <h1 className="top"> fhf </h1>
-    // </div>
-    // <div className = "header">
-    //
-    // </div>
-    //
-    //
-    //     <ListItemText primary="#1 Johnny 475 Points" />
-    //     <ListItemText primary="#2 Karen 324 Points" />
-    //     <ListItemText primary="#3 Jack 245 Points" />
-    //     <ListItemText primary="#4 Eric 233 Points" />
-    //     <ListItemText primary="#5 Lance 124 Points" />
-    //
-    //   </List>
   )
 }
 
