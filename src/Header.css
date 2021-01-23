@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid darkgray; /*New*/
+  align-items: center;
+  background-color: #f9f9f9; /*New*/
+  position: fixed; /*New*/
+  right: 0; /*New*/
+  left: 0; /*New*/
+  top: 0; /*New*/
+}
+
+.header__logo {
+  height: 40px;
+  object-fit: contain;
+}
+
+.header__icon {
+  padding: 20px;
+}
