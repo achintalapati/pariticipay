@@ -1,0 +1,20 @@
+.Store {
+  position: relative;
+  top: 100px
+}
+
+.ScrollableShop {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.PfpItem {
+  display: inline-block;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
