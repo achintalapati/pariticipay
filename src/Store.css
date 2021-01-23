@@ -3,6 +3,8 @@
   background-image: linear-gradient(rgba(52, 225, 235, 1), rgba(167, 250, 240, 1));
   padding-bottom: 27px;
   text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .StoreTitle {
