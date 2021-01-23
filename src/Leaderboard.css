@@ -4,15 +4,18 @@
   margin-right: 25px;
   text-align: left;
 
+}
 
-
+.leaderboard_logo {
+  width: 100px;
+  height: 100px;
 }
 
 .leaderboard{
   margin-top: 100px;
   margin-left: 0;
   padding-top: 50px;
-  padding-bottom: 207px;
+  padding-bottom: 103px;
   text-align: center;
   background-image: linear-gradient(rgba(52, 225, 235, 1), rgba(167, 250, 240, 1));
 

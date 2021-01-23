@@ -6,6 +6,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import {withStyles, makeStyles} from '@material-ui/core/styles';
 import {Card, CardContent, Table, TableHead, TableRow, TableBody, TableCell} from '@material-ui/core';
 import './Leaderboard.css';
+import logo from './trophy-removebg-preview.png';
 
 function createData(place, name, points) {
   return { place, name, points };
@@ -41,8 +42,12 @@ const StyledTableRow = withStyles((theme) => ({
 function Leaderboard(){
   return(
     <div className="leaderboard">
-    
 
+    <img
+      className='leaderboard_logo'
+      src={logo}
+      alt='logo'
+    />
     <h1> Leaderboard </h1>
       <div className="list">
 
