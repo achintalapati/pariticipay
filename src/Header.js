@@ -9,15 +9,21 @@ import { Link } from 'react-router-dom';
 function Header() {
   return (
     <div className="header">
-      <IconButton>
-        <BarChartIcon className="header__icon" fontSize="large"/>
-      </IconButton>
-      <IconButton>
-        <PersonIcon className="header__icon" fontSize="large"/>
-      </IconButton>
-      <IconButton>
-        <ShoppingCartIcon className="header__icon" fontSize="large"/>
-      </IconButton>
+      <Link to='/leaderboard'>
+        <IconButton>
+          <BarChartIcon className="header__icon" fontSize="large"/>
+        </IconButton>
+      </Link>
+      <Link to='/'>
+        <IconButton>
+          <PersonIcon className="header__icon" fontSize="large"/>
+        </IconButton>
+      </Link>
+      <Link to='/store'>
+        <IconButton>
+          <ShoppingCartIcon className="header__icon" fontSize="large"/>
+        </IconButton>
+      </Link>
     </div>
   )
 }
