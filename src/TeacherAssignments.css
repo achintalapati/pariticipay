@@ -1,0 +1,21 @@
+.teacher_assignments {
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 41px;
+  text-align: center;
+  height: 100%;
+  background-image: linear-gradient(rgba(52, 225, 235, 1), rgba(167, 250, 240, 1));
+}
+
+.add_assignments {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
+  background-color: rgba(255,255,255,0.4);
+  width: 55%;
+}
+
+.assignments_list {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+}

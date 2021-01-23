@@ -17,14 +17,13 @@
 }
 
 .header__icon {
-  padding-left: 33px;
-  padding-right: 33px;
   display: flex;
 }
 
 .header_buttons {
   display: flex;
   position: relative;
+  justify-content: space-between;
 }
 
 .header_logo_box {
