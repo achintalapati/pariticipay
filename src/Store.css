@@ -1,6 +1,6 @@
 .Store {
   position: relative;
-  top: 100px
+  top: 100px;
 }
 
 .ScrollableShop {
@@ -9,12 +9,33 @@
   white-space: nowrap;
 }
 
-.PfpItem {
+.ShopItem {
   display: inline-block;
+  border: 1px solid gray;
+  margin-right: 10px;
+  background-image: linear-gradient(rgb(21, 93, 176), rgb(109, 213, 237));
+  padding: 5px;
+}
+
+.PfpItem {
+  display: block;
   border-radius: 50%;
   width: 150px;
   height: 150px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+
+.MusicItem {
+  display: block;
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+}
+
+.SpecialItem {
+  display: block;
+  width: 150px;
+  height: 150px;
 }
