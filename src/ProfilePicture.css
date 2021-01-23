@@ -1,15 +1,47 @@
 .profilePicture {
   margin: auto;
-  padding-top: 120px;
+  margin-top: 120px;
+  /* border-style: solid; */
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  text-align: center;
 }
 
 .profilePicture_image {
-  border-radius: 50%;
-  width: 70%;
+  margin-top: 0;
+  padding-top: 0;
+  width: 100%;
+  /* object-fit: contain; */
+}
+
+.profileRank {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   /* object-fit: contain; */
 }
 
 .profilePicture_name {
+  font-family: "Helvetica Neue", Helvetica, "Apple SD Gothic Neo", AppleGothic, Dotum, Arial, Tahoma;
+  font-weight: bold;
+  color: #1f8ecd;
   text-align: center;
-  padding: 2%;
+  padding: 0;
+  margin: 0;
+}
+
+.points {
+  font-family: "Helvetica Neue", Helvetica, "Apple SD Gothic Neo", AppleGothic, Dotum, Arial, Tahoma;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.p1 {
+  font-family: "Helvetica Neue", Helvetica, "Apple SD Gothic Neo", AppleGothic, Dotum, Arial, Tahoma;
+  font-size: 10px !important;
+  padding: 0;
+  margin: 0;
 }
