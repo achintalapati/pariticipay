@@ -76,7 +76,7 @@ function TeacherStore() {
         <h2>Special Items</h2>
         <div className="ScrollableShop">
           <div className="ShopItem">
-            <div className="SpecialItem" style={{'background-image': 'url("https://thumbs.dreamstime.com/b/red-blank-shinning-ticket-coupon-transparent-effect-background-vector-113213246.jpg")'}}></div>
+            <div className="SpecialItem"></div>
             <h3 className="ShopItemName">Homework Pass</h3>
             <p className="Cost">1000 points</p>
           </div>

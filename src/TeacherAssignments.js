@@ -6,21 +6,12 @@ import IconButton from '@material-ui/core/IconButton';
 import Add from '@material-ui/icons/Add';
 import axios from './axios';
 
-function createData(name, points, submitted) {
-  return { name, points, submitted };
-}
-
-const rows = [
-  createData('Math Worksheet', 10, 25),
-  createData('Vocab Worksheet', 10, 20),
-  createData('Read Book', 15, 20),
-  createData('Spanish Homework', 10, 13),
-  createData('Science Test', 20, 2),
-];
 
 function TeacherAssignments() {
 
   const [assignments, setAssignments] = useState([]);
+  const [assignmentInput, setAssignmentInput] = useState([]);
+  const [pointInput, setPointInput] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
@@ -32,6 +23,10 @@ function TeacherAssignments() {
     fetchData();
   }, []);
 
+  const sendData = async () => {
+    let res = await axios.post('/assignments', {"name": assignmentInput, "points": pointInput});
+    console.log(res);
+  }
 
     return(
       <div className='teacher_assignments'>
@@ -71,15 +66,19 @@ function TeacherAssignments() {
             id="new-assignment-name"
             label="Assignment Name"
             variant="filled"
+            value={assignmentInput}
+           onChange={e => setAssignmentInput(e.target.value)}
           />
           <TextField
             id="assignment_points"
             label="Points"
             type="number"
             variant="filled"
+            value={pointInput}
+           onChange={e => setPointInput(e.target.value)}
           />
         </div>
-        <div className='add_assignments'>
+        <div className='add_assignments' onClick={()=>sendData()}>
           <IconButton>
             <Add className='add__icon' fontSize='large'/>
           </IconButton>

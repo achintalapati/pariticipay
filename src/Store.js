@@ -60,7 +60,7 @@ function Store() {
         <h2>Special Items</h2>
         <div className="ScrollableShop">
           <div className="ShopItem">
-            <div className="SpecialItem" style={{'background-image': 'url("")'}}></div>
+            <div className="SpecialItem"></div>
             <h3 className="ShopItemName">Homework Pass</h3>
             <p className="Cost">1000 points</p>
           </div>
