@@ -1,0 +1,70 @@
+.Store {
+  background-image: linear-gradient(rgba(52, 225, 235, 1), rgba(167, 250, 240, 1));
+  padding-bottom: 27px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.StoreTitle {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.ShopSection {
+  text-align: left;
+}
+
+.ScrollableShop {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.ShopItem {
+  display: inline-block;
+  border: 1px solid gray;
+  margin-right: 10px;
+  /* background-image: linear-gradient(rgb(55, 62, 70), rgb(255, 107, 107)); */
+  /* background-image: linear-gradient(rgb(0, 198, 255), rgb(0, 114, 255)); */
+  background-image: linear-gradient(rgb(201, 255, 191), rgb(255, 175, 189));
+  padding: 5px;
+}
+
+.PfpItem {
+  display: block;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.MusicItem {
+  display: block;
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+}
+
+.SpecialItem {
+  display: block;
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+}
+
+.AddBox {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px;
+  height: 120px;
+  vertical-align: bottom;
+}
+
+.ShopAdd {
+  display: inline-block;
+  border: 1px solid gray;
+  background-image: linear-gradient(rgb(201, 255, 191), rgb(255, 175, 189));
+  margin: auto;
+}
