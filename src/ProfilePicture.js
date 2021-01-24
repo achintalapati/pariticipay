@@ -9,11 +9,11 @@ function createData(name, points) {
 }
 
 const rows = [
-  createData('Math Worksheet', 10),
-  createData('Vocab Worksheet', 10),
-  createData('Read Book', 15),
-  createData('Spanish Homework', 10),
-  createData('Science Test', 20),
+  createData('English Essay', 40),
+  createData('Page 62 #4-19', 15),
+  createData('Cell Cycle Drawing', 30),
+  createData('Coloring Worksheet', 500),
+  createData('Multiplication Tables', 20),
 ];
 
 class ProfilePicture extends React.Component {
