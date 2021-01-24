@@ -1,9 +1,10 @@
 import * as React from 'react';
+import { useState, useEffect} from 'react';
 import {Card, CardContent, Table, TableHead, TableRow, TableBody, TableCell, TextField} from '@material-ui/core';
 import './TeacherAssignments.css';
 import IconButton from '@material-ui/core/IconButton';
 import Add from '@material-ui/icons/Add';
-
+import axios from './axios';
 
 function createData(name, points, submitted) {
   return { name, points, submitted };
@@ -17,13 +18,21 @@ const rows = [
   createData('Science Test', 20, 2),
 ];
 
-class TeacherAssignments extends React.Component {
+function TeacherAssignments() {
 
-  constructor(props) {
-    super(props);
-  }
+  const [assignments, setAssignments] = useState([]);
 
-  render() {
+  useEffect(() => {
+    async function fetchData() {
+      const req = await axios.get('/assignments');
+
+      setAssignments(req.data);
+    }
+
+    fetchData();
+  }, []);
+
+
     return(
       <div className='teacher_assignments'>
         <div className='assignments_list'>
@@ -38,8 +47,8 @@ class TeacherAssignments extends React.Component {
                 </TableRow>
               </TableHead>
               <TableBody>
-                {rows.map((row) => (
-                  <TableRow id={row.name} key={row.name}>
+                {assignments.map((row) => (
+                  <TableRow id={row.name} key={assignments.name}>
                       <TableCell component="th" scope="row">
                         {row.name}
                       </TableCell>
@@ -47,7 +56,7 @@ class TeacherAssignments extends React.Component {
                         {row.points}
                       </TableCell>
                       <TableCell align="right">
-                        {row.submitted}
+                        0
                       </TableCell>
                   </TableRow>
                 ))}
@@ -76,8 +85,7 @@ class TeacherAssignments extends React.Component {
           </IconButton>
         </div>
       </div>
-    );
-  }
+    )
 }
 
 export default TeacherAssignments;
