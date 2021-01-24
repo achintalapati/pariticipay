@@ -74,7 +74,7 @@ function TeacherAssignments() {
           />
           <TextField
             id="assignment_points"
-            label="Number"
+            label="Points"
             type="number"
             variant="filled"
           />
